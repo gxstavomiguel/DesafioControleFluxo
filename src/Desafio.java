@@ -23,7 +23,6 @@ public class Desafio {
 
         valorImposto = salarioBruto * percentualImposto;
         salarioAtualizado = (salarioBruto - valorImposto) + valorBeneficio;
-
-        System.out.println("Valor reajustado: " + salarioAtualizado);
+        System.out.printf("Valor reajustado: %.2f%n", salarioAtualizado);
     }
 }
