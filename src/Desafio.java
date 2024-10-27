@@ -17,7 +17,7 @@ public class Desafio {
             percentualImposto = 0.05f;
         } else if (salarioBruto >= 1100.01 && salarioBruto <= 2500) {
             percentualImposto = 0.10f;
-        } else if (salarioBruto > 2500) {
+        } else {
             percentualImposto = 0.15f;
         }
 
