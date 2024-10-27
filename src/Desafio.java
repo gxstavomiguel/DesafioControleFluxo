@@ -6,12 +6,12 @@ public class Desafio {
         float percentualImposto = 0;
         float valorImposto = 0;
 
-        Scanner leitorDados = new Scanner(System.in);
+        Scanner leitorValores = new Scanner(System.in);
 
-        System.out.println("Informe o sálario bruto: ");
-        float salarioBruto = leitorDados.nextFloat();
+        System.out.println("Informe o salário bruto: ");
+        float salarioBruto = leitorValores.nextFloat();
         System.out.println("Informe o valor dos benefícios: ");
-        float valorBeneficio = leitorDados.nextFloat();
+        float valorBeneficio = leitorValores.nextFloat();
 
         if (salarioBruto >= 0 && salarioBruto <= 1100) {
             percentualImposto = 0.05f;
@@ -24,5 +24,6 @@ public class Desafio {
         valorImposto = salarioBruto * percentualImposto;
         salarioAtualizado = (salarioBruto - valorImposto) + valorBeneficio;
         System.out.printf("Valor reajustado: %.2f%n", salarioAtualizado);
+        leitorValores.close();
     }
 }
